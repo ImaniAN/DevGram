@@ -1,4 +1,7 @@
 # Prerequisites
+*.fig
+*.pdf
+*.rar
 *.d
 
 # Compiled Object files
