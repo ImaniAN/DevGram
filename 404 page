@@ -1,0 +1,107 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class error extends StatelessWidget {
+  const error({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+   return  Scaffold(
+     body:  Padding(
+       padding: const EdgeInsets.all(10),
+    child: ListView(
+    children: <Widget> [
+      Container(
+        alignment: Alignment.center,
+        child:  const Text('404',style: TextStyle(
+          fontSize: 120,
+          fontWeight: FontWeight.w600,
+          color:Colors.deepPurple,
+        )),
+
+      ),
+      const SizedBox(height: 15),
+    Container(
+    alignment: Alignment.center,
+    child:  const Text('Page not found',style: TextStyle(
+    fontSize: 100,
+    fontWeight: FontWeight.w600,
+    color:Colors.black,
+    )),
+
+    ),
+      const SizedBox(height: 15),
+      Container(
+        alignment: Alignment.center,
+        child:  const Text('Please check the url in the address bar and try again.',style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.w300,
+          color:Colors.black,
+        )),
+
+      ),
+      const SizedBox(height: 25),
+      Row(
+        children: <Widget> [
+          Expanded(
+            child:  ElevatedButton(
+                onPressed: () {  },
+                child: const Text('Go back home'),
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.all(15),
+                    primary:Colors.deepPurple,
+                    textStyle:const TextStyle(
+                        fontSize:30,
+                        fontWeight: FontWeight.bold
+
+                    )
+                )
+
+            ),
+      ),
+
+          const SizedBox(width:6),
+          Expanded(
+            child:  ElevatedButton(
+                onPressed: () {  },
+                child: const Text('Contact support', style: TextStyle(
+                    color:Colors.black
+                )),
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.all(15),
+                    primary:Colors.white,
+                    textStyle:const TextStyle(
+                        fontSize:30,
+                        fontWeight: FontWeight.bold,
+
+
+                    )
+                ),
+
+
+
+            ),
+          ),
+
+
+
+        ]
+
+      )
+
+
+
+    ]
+    )
+
+
+
+
+
+
+)
+
+   );
+  }
+
+}
