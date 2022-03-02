@@ -1,0 +1,44 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class serverdown extends StatelessWidget {
+  const serverdown({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(10),
+          child: ListView(
+            children: <Widget>[
+              const SizedBox(height:35),
+              Container(
+                alignment: Alignment.center,
+                child:  const  Image(image: AssetImage('assets/server_down_s4lk.png'),
+                  width:600,
+                )
+              ),
+              const SizedBox(height:15),
+              Container(
+                alignment: Alignment.center,
+                child: const Text('Oops Connection Error',style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w600,
+                  color:Colors.black,),
+              ),
+              )
+
+            ]
+          )
+
+
+
+
+
+
+          ),
+
+
+    );
+  }
+}
