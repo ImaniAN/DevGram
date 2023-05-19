@@ -18,7 +18,6 @@
         "naumovs.color-highlight",
         "bierner.color-info",
         "anseki.vscode-color",
-        "dart-code.dart-code",
         "luanpotter.dart-import",
         "me-dutour-mathieu.vscode-firebase",
         "toba.vsfire",
@@ -52,6 +51,7 @@
         "gruntfuggly.todo-tree",
         "shardulm94.trailing-spaces",
         "lihui.vs-color-picker",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "esskar.vscode-flutter-i18n-json"
     ]
 }
